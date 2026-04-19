@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Stadium Assistant</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header class="dashboard-header">
+        <h1>🏟️ Smart Stadium AI System</h1>
+        <p>Real-Time Crowd Intelligence & Coordination</p>
+
+        <div class="stats">
+            <div class="stat-box">
+                <h3>Total Occupancy</h3>
+                <p id="occupancy">708</p>
+            </div>
+
+            <div class="stat-box">
+                <h3>Congested Zones</h3>
+                <p id="zones">1</p>
+            </div>
+
+            <div class="stat-box">
+                <h3>Avg Wait Time</h3>
+                <p id="wait">5 min</p>
+            </div>
+
+            <div class="stat-box">
+                <h3>Active Scenario</h3>
+                <p id="scenario">Normal</p>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="card">
+            <h2>🎮 Scenario Control</h2>
+            <button onclick="setScenario(0)">Normal</button>
+            <button onclick="setScenario(1)">Halftime Rush</button>
+            <button onclick="setScenario(2)">Exit Rush</button>
+        </section>
+        <section class="card">
+            <h2>🧭 Live Stadium Flow</h2>
+            <div class="circle-container">
+                <div class="circle" id="circleChart">
+                    <div class="center-text">LIVE</div>
+                </div>
+            </div>
+        </section>
+        <section class="card">
+            <h2>🧠 AI Decision Logs</h2>
+            <div id="ai-logs" class="logs"></div>
+        </section>
+
+        <section class="card">
+            <h2>📍 Crowd Status</h2>
+            <p id="crowd-info">Loading...</p>
+            <button onclick="updateCrowd()">Refresh</button>
+        </section>
+
+        <section class="card">
+            <h2>⏱️ Queue Estimator</h2>
+            <p id="queue-info">Click to check wait time</p>
+            <button onclick="checkQueue()">Check Wait Time</button>
+        </section>
+
+        <section class="card">
+            <h2>🤖 Ask Assistant</h2>
+            <input type="text" id="user-input" placeholder="Ask something...">
+            <button onclick="askAI()">Ask</button>
+            <p id="ai-response"></p>
+        </section>
+
+    </main>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

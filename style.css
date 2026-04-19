@@ -1,0 +1,156 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background: #0f172a;
+    color: white;
+    text-align: center;
+}
+
+header {
+    background: #1e293b;
+    padding: 20px;
+}
+
+h1 {
+    margin: 0;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+    align-items: center;
+}
+
+.card {
+    background: #1e293b;
+    padding: 20px;
+    border-radius: 12px;
+    width: 300px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+button {
+    margin-top: 10px;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 8px;
+    background: #38bdf8;
+    color: black;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+button:hover {
+    background: #0ea5e9;
+}
+
+input {
+    padding: 10px;
+    width: 90%;
+    border-radius: 8px;
+    border: none;
+    margin-top: 10px;
+}
+
+.dashboard-header {
+    background: #020617;
+    padding: 20px;
+    border-bottom: 1px solid #1e293b;
+}
+
+.stats {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 15px;
+    flex-wrap: wrap;
+}
+
+.stat-box {
+    background: #1e293b;
+    padding: 15px;
+    border-radius: 10px;
+    width: 150px;
+}
+
+.stat-box h3 {
+    font-size: 14px;
+    margin: 0;
+    color: #94a3b8;
+}
+
+.stat-box p {
+    font-size: 20px;
+    margin: 5px 0 0;
+    font-weight: bold;
+}
+
+.circle-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+}
+
+.circle {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background: conic-gradient(#22c55e 0% 40%,
+            /* Low */
+            #facc15 40% 70%,
+            /* Medium */
+            #ef4444 70% 100%
+            /* High */
+        );
+    position: relative;
+    animation: rotate 10s linear infinite;
+}
+
+.center-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-weight: bold;
+}
+
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.logs {
+    height: 150px;
+    overflow-y: auto;
+    text-align: left;
+    font-size: 14px;
+}
+
+.log-entry {
+    margin-bottom: 8px;
+    padding: 5px;
+    border-left: 3px solid #38bdf8;
+}
+
+main {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.card {
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+}
