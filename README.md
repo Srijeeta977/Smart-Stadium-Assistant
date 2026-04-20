@@ -85,6 +85,7 @@ Due to the frontend-only prototype constraints, a logic-based assistant is curre
 - AI-like decision logging system  
 - Interactive control panel for scenario testing  
 - Live updating visualization (radial flow representation)  
+- Updated for deployment
 
 ## 🏆 Why This Stands Out
 This project goes beyond a basic solution by simulating a real-time intelligent stadium management system. It combines UI, logic, and system behavior to demonstrate how AI-driven coordination can improve large-scale event experiences.
