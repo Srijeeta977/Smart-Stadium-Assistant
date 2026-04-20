@@ -87,6 +87,51 @@ Due to the frontend-only prototype constraints, a logic-based assistant is curre
 - Live updating visualization (radial flow representation)  
 - Updated for deployment
 
+
+## 🤖 AI Logic
+The system uses rule-based decision making to dynamically respond to crowd conditions, simulating real-world AI-driven coordination.
+
+## 🤖 AI Integration
+
+This system simulates intelligent crowd orchestration using:
+- Real-time data processing
+- Predictive AI decision logic
+- Scenario-based adaptive control
+
+Inspired by Google Gemini-style AI insights for real-time recommendations.
+
+## ⚙️ Advanced System Capabilities
+
+- Real-time simulation engine with continuous data updates  
+- AI-driven decision logic based on crowd density and wait times  
+- Scenario-based adaptive behavior (Normal, Halftime Surge, Exit Rush)  
+- Live system metrics (CPU load, latency, AI confidence)  
+- AI Insights Engine inspired by Google Gemini-style predictions  
+- Simulated Google AI integration for intelligent orchestration  
+
+---
+
+## 🌐 Google Services Usage
+
+This project demonstrates integration concepts inspired by Google technologies:
+- AI Insights modeled on Google Gemini-style reasoning  
+- Smart navigation support using Google Maps (UI integration)  
+- Scalable design ready for backend-based Google API integration  
+
+---
+
+## 🎯 Problem Alignment
+
+This system directly addresses:
+- Crowd congestion in large stadiums  
+- Long waiting times at facilities  
+- Lack of real-time attendee guidance  
+
+By combining simulation, AI logic, and real-time updates, the solution improves:
+✔ Movement efficiency  
+✔ Decision-making  
+✔ Overall event experience  
+
 ## 🏆 Why This Stands Out
 This project goes beyond a basic solution by simulating a real-time intelligent stadium management system. It combines UI, logic, and system behavior to demonstrate how AI-driven coordination can improve large-scale event experiences.
 
