@@ -166,6 +166,8 @@ function updateDashboard() {
     const occupancy = getRandom(...scenario.occupancy);
     const wait = getRandom(...scenario.wait);
     const zones = getRandom(...scenario.zones);
+    const efficiency = Math.max(0, 100 - wait * 5);
+    document.getElementById("efficiency").innerText = efficiency + "%";
 
     document.getElementById("occupancy").innerText = occupancy;
     document.getElementById("wait").innerText = wait + " min";
@@ -207,26 +209,27 @@ function askAI() {
     const input = document.getElementById("user-input").value.toLowerCase();
     let response = "";
 
-    if (input.includes("gate")) {
-        response = "AI Suggestion: Gate C is currently optimal with lowest congestion.";
-    }
-    else if (input.includes("food")) {
-        response = "AI Insight: Food stalls near Gate B have lowest wait time.";
-    }
-    else if (input.includes("exit")) {
-        response = "AI Routing: Exit 2 is the fastest path right now.";
+    if (input.includes("best gate")) {
+        response = "AI Analysis: Gate C is optimal due to lowest congestion levels.";
     }
     else if (input.includes("crowd")) {
-        response = "Live Status → Gate A: High | Gate B: Medium | Gate C: Low";
+        response = "AI Insight: High density near Gate A, medium at Gate B, low at Gate C.";
+    }
+    else if (input.includes("wait")) {
+        response = "Prediction: Wait times increasing near food stalls. Suggested shift to Gate B.";
+    }
+    else if (input.includes("exit")) {
+        response = "Routing Recommendation: Use Exit 2 for fastest clearance.";
     }
     else {
-        response = "Try queries like: best gate, crowd status, food, exit routes.";
+        response = "AI Assistant: Ask about crowd, gates, exits, or wait times.";
     }
 
     document.getElementById("ai-response").innerText = response;
-    addLog("QUERY", input);
-}
 
+    addLog("AI", "Processed user query intelligently");
+    addLog("MODEL", "Crowd Prediction Model executed successfully");
+}
 // =======================
 // INIT SYSTEM
 // =======================

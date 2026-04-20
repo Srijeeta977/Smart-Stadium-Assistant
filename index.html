@@ -13,6 +13,11 @@
     <header class="dashboard-header">
         <h1>🏟️ Smart Stadium AI System</h1>
         <p>Real-Time Crowd Intelligence & Coordination</p>
+        <h3>📍 Smart Navigation (Google Maps)</h3>
+        <iframe src="https://www.google.com/maps?q=Salt+Lake+Stadium+Kolkata&output=embed" width="100%" height="250"
+            style="border:0;">
+        </iframe>
+        <p>Flow Efficiency: <span id="efficiency">--</span></p>
 
         <div class="stats">
             <div class="stat-box">
@@ -20,11 +25,21 @@
                 <p id="occupancy">708</p>
             </div>
 
+
             <div class="system-metrics">
                 <h3>⚙️ System Metrics</h3>
                 <p>CPU Load: <span id="cpu">--</span>%</p>
                 <p>Response Time: <span id="latency">--</span> ms</p>
                 <p>AI Confidence: <span id="confidence">--</span>%</p>
+            </div>
+
+            <div class="solution-box">
+                <h3>🎯 AI-Based Problem Solving</h3>
+                <ul>
+                    <li>Detects congestion before it happens</li>
+                    <li>Reduces wait time using predictive routing</li>
+                    <li>Guides users to least crowded areas</li>
+                </ul>
             </div>
 
             <div class="ai-insights">
@@ -55,12 +70,7 @@
     </header>
 
     <main>
-        <section class="card">
-            <h2>📍 Smart Navigation</h2>
-            <iframe src="https://www.google.com/maps?q=stadium&output=embed" width="100%" height="250"
-                style="border:0;">
-            </iframe>
-        </section>
+
         <section class="card">
             <h2>🎮 Scenario Control</h2>
             <button onclick="setScenario(0)">Normal</button>

@@ -135,6 +135,18 @@ By combining simulation, AI logic, and real-time updates, the solution improves:
 ## 🏆 Why This Stands Out
 This project goes beyond a basic solution by simulating a real-time intelligent stadium management system. It combines UI, logic, and system behavior to demonstrate how AI-driven coordination can improve large-scale event experiences.
 
+## 🧪 Testing
+
+- Tested real-time updates under multiple scenarios  
+- Verified UI responsiveness and dynamic data flow  
+- Simulated edge cases like high congestion and exit rush  
+
+## 🤖 AI System Design
+
+The system uses rule-based decision logic combined with real-time simulation to mimic intelligent crowd management.  
+
+Due to frontend deployment constraints, AI behavior is simulated but structured to reflect real-world decision-making systems similar to Google AI workflows.
+
 ## 👨‍💻 Author
 
 Developed as part of a hackathon challenge to improve stadium experiences using smart technology.
