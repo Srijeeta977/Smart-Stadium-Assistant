@@ -1,5 +1,6 @@
 # 🏟️ Smart Stadium Assistant  
 ### 🚀 Submission for Virtual: PromptWars
+Live website :  https://srijeeta977.github.io/Smart-Stadium-Assistant/
 
 ## 📌 Problem Statement
 
